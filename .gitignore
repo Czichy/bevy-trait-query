@@ -2,3 +2,41 @@
 /Cargo.lock
 /proc-macro/Cargo.lock
 /proc-macro/target
+.rustc_info.json
+/target
+target
+/tags
+**/target
+**/*.rs.bk
+/config.yaml
+/*.iml
+/issues
+/captures
+/world_config.yaml
+/settings.yaml
+/TODO.md
+/.xwin-cache
+**/*.dbf
+**/snapshot*.ron
+**/test.parquet
+**/trace*.json
+.directory
+**/venv
+**/.venv
+package.json
+package-lock.json
+seeking-edge.code-workspace
+node_modules
+package-lock.json
+package-json
+.code-workspace
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+

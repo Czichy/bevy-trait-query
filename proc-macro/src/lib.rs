@@ -238,8 +238,8 @@ fn impl_trait_query(arg: TokenStream, item: TokenStream) -> Result<TokenStream2>
             }
 
             #[inline]
-            fn get_state(world: &#imports::World) -> Option<Self::State> {
-                <#my_crate::All<&#trait_object> as #imports::WorldQuery>::get_state(world)
+            fn get_state(_: &#imports::Components) -> Option<Self::State> {
+                // <#my_crate::All<&#trait_object> as #imports::WorldQuery>::get_state(world)
             }
 
             #[inline]
@@ -338,8 +338,8 @@ fn impl_trait_query(arg: TokenStream, item: TokenStream) -> Result<TokenStream2>
             }
 
             #[inline]
-            fn get_state(world: &#imports::World) -> Option<Self::State> {
-                <#my_crate::All<&mut #trait_object> as #imports::WorldQuery>::get_state(world)
+            fn get_state(_: &#imports::Components) -> Option<Self::State> {
+                // <#my_crate::All<&mut #trait_object> as #imports::WorldQuery>::get_state(world)
             }
 
             #[inline]
